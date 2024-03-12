@@ -1,0 +1,265 @@
+/* Import Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-size-large: 42px;
+  --font-size-medium: 28px;
+  --font-size-small: 18px;
+  --font-size-extra-small: 16px;
+  --font-size-paragraph: 14px;
+
+  --font-weight-bold: 700;
+  --font-weight-semi-bold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  --color-white: #ffffff;
+  --color-grey: #f8f5f4;
+  --color-black: #252525;
+  --color-green: #507b64;
+  --color-orange: #fd5a46;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  padding-top: 15px;
+  overflow-x: hidden;
+}
+
+h3.heading {
+  font-size: var(--font-size-medium);
+  color: var(--color-black);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.sec-heading {
+  padding-top: 170px;
+}
+
+.sec-content {
+  padding-top: 70px;
+}
+
+.container-card {
+  display: flex;
+  padding: 70px;
+}
+
+.btn.btn-outline-green {
+  margin-left: 20px;
+  border: 2px #507b64 solid;
+  color: var(--color-green);
+  border-radius: 14px;
+}
+
+.btn.btn-outline-green:hover {
+  color: var(--color-grey);
+  background-color: var(--color-green);
+}
+
+.btn.btn-outline-orange {
+  margin-left: 20px;
+  border: 2px #fd5a46 solid;
+  color: var(--color-orange);
+  border-radius: 14px;
+}
+
+.btn.btn-outline-orange:hover {
+  color: var(--color-grey);
+  background-color: var(--color-orange);
+}
+
+/* Navbar Styles */
+nav {
+  background-color: var(--color-white);
+}
+
+.navbar-brand img,
+form {
+  margin: 0 40px;
+}
+
+.navbar-nav li {
+  margin-right: 30px;
+  font-weight: var(--font-size-medium);
+}
+
+.navbar-nav li:hover,
+.navbar-nav li:active {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.input-group {
+  border: 1px #252525 solid;
+  border-radius: 6px;
+}
+
+/* Header Styles */
+.header {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--color-black);
+}
+
+.span-text {
+  color: var(--color-orange);
+}
+
+p {
+  padding-top: 20px;
+  font-size: var(--font-size-paragraph);
+  color: var(--color-black);
+}
+
+h1.header {
+  margin-top: 30px;
+}
+
+h3.button-text {
+  display: inline;
+  color: var(--color-black);
+  font-size: var(--font-size-extra-small);
+}
+
+h4.card-heading {
+  display: inline;
+  margin-left: 20px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-grey);
+}
+
+.grid-container {
+  display: flex;
+  margin-top: 70px;
+}
+
+.background-slice {
+  background-color: var(--color-grey);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: rgba(25, 25, 25, 0.1) 0px 30px 25px 0px;
+}
+
+.img-noodle {
+  max-width: 100%;
+  transform: rotate(60deg);
+}
+
+.button-shadow {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 14px;
+  color: var(--color-black);
+  background-color: var(--color-orange);
+  box-shadow: 10px 10px 0px -2px rgba(37, 37, 37, 1);
+}
+
+.button-shadow:hover {
+  background-color: var(--color-green);
+}
+
+.icons {
+  color: var(--color-grey);
+}
+
+.card.color-orange {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: var(--color-orange);
+}
+
+.card.color-green {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: var(--color-green);
+}
+
+.card-body {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Recipe Styles */
+.card-body-recipes {
+  padding: 15px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  padding: 15px;
+}
+
+.card-text {
+  font-size: var(--font-size-small);
+}
+
+.stars {
+  color: var(--color-orange);
+  font-size: var(--font-size-paragraph);
+}
+
+.stars p {
+  display: inline;
+  margin-left: 15px;
+}
+
+.min-cal {
+  font-size: var(--font-size-paragraph);
+  color: var(--color-green);
+  margin: 0 20px 20px;
+}
+
+.min-cal i {
+  margin: 10px;
+}
+
+/* About Styles */
+.bg-img {
+  border-radius: 50px 50px 50px 200px;
+  background-image: url(/Asset/cooking.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin-bottom: 50px;
+}
+
+/* Services Styles */
+.container-badges {
+  padding-left: 250px;
+  padding-right: 150px;
+  color: var(--color-green);
+}
+
+h3.number-badges {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+h3.text-badges {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+}
+
+.card-body-services,
+.card-body-reviews {
+  padding: 40px;
+}
+
+h6.card-link {
+  font-size: var(--font-size-extra-small);
+  color: var(--color-orange);
+}
