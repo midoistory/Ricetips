@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  padding-top: 15px;
+  padding-top: 10px;
   overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@ h3.heading {
 }
 
 .sec-heading {
-  padding-top: 170px;
+  padding-top: 180px;
 }
 
 .sec-content {
@@ -79,6 +79,10 @@ h3.heading {
   background-color: var(--color-orange);
 }
 
+.card.card-content {
+  border-radius: 14px;
+}
+
 /* Navbar Styles */
 nav {
   background-color: var(--color-white);
@@ -86,7 +90,7 @@ nav {
 
 .navbar-brand img,
 form {
-  margin: 0 40px;
+  margin: 0px 60px;
 }
 
 .navbar-nav li {
@@ -137,6 +141,7 @@ h4.card-heading {
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-small);
   color: var(--color-grey);
+  padding: 0;
 }
 
 .grid-container {
@@ -148,7 +153,7 @@ h4.card-heading {
   background-color: var(--color-grey);
   padding: 50px;
   border-radius: 30px;
-  box-shadow: rgba(25, 25, 25, 0.1) 0px 30px 25px 0px;
+  box-shadow: var(--color-black) 0px 30px 50px -60px;
 }
 
 .img-noodle {
@@ -187,9 +192,12 @@ h4.card-heading {
   background-color: var(--color-green);
 }
 
-.card-body {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+.card.color-orange {
+  box-shadow: var(--color-black) 0px 0px 60px -20px;
+}
+
+.card.color-green {
+  box-shadow: var(--color-black) 0px 0px 60px -20px;
 }
 
 /* Recipe Styles */
@@ -204,6 +212,7 @@ h4.card-heading {
 
 .card-text {
   font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
 }
 
 .stars {
@@ -238,28 +247,78 @@ h4.card-heading {
 }
 
 /* Services Styles */
-.container-badges {
-  padding-left: 250px;
-  padding-right: 150px;
-  color: var(--color-green);
-}
-
-h3.number-badges {
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-semi-bold);
-}
-
-h3.text-badges {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-regular);
-}
-
 .card-body-services,
 .card-body-reviews {
   padding: 40px;
 }
 
-h6.card-link {
-  font-size: var(--font-size-extra-small);
+.card-body-services:hover,
+.card-body-reviews:hover {
+  box-shadow: var(--color-orange) 0px 50px 100px -70px;
+}
+
+.card-link {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-semi-bold);
   color: var(--color-orange);
+  text-decoration: none;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container.achievement {
+  text-align: center;
+}
+
+.container li {
+  text-align: left;
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.container li:last-child {
+  margin-right: 0;
+}
+
+.container li h3 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--color-green);
+}
+
+.container li h6 {
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-green);
+}
+
+/* Reviews Styles */
+.profile-picture {
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-reviews {
+  display: flex;
+}
+
+.card-text h5 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--color-black);
+}
+
+.card-text h6 {
+  font-size: var(--font-size-paragraph);
+  color: var(--color-black);
+  font-weight: var();
+}
+
+.card-body-reviews p {
+  margin-top: 30px;
+  padding: 0;
 }

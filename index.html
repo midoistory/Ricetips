@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ricetips | Culinary Adventure</title>
+  <link rel="icon" type="image/svg+xml" href="Asset/favicon.svg">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 
@@ -85,7 +86,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-sm-3">
-          <div class="card color-orange">
+          <div class="card card-content color-orange">
             <div class="card-body">
               <i class="icons fa-solid fa-mug-saucer fa-xl"></i>
               <h4 class="card-heading">Breakfast</h4>
@@ -93,7 +94,7 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="card color-green">
+          <div class="card card-content color-green">
             <div class="card-body">
               <i class="icons fa-solid fa-bowl-food fa-xl"></i>
               <h4 class="card-heading">Lunch</h4>
@@ -101,7 +102,7 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="card color-orange">
+          <div class="card card-content color-orange">
             <div class="card-body">
               <i class="icons fa-solid fa-utensils fa-xl"></i>
               <h4 class="card-heading">Dinner</h4>
@@ -109,7 +110,7 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="card color-green">
+          <div class="card card-content color-green">
             <div class="card-body">
               <i class="icons fa-solid fa-cookie-bite fa-xl"></i>
               <h4 class="card-heading">Snacks</h4>
@@ -276,46 +277,46 @@
         <div class="card-body-services">
           <h6 class="card-text">Recipe Categories</h6>
           <p>Categorization of recipes such as healthy dishes, quick recipes, vegetarian dishes...</p>
-          <h6 class="card-link">Explore service</h6>
+          <a href="#" class="card-link">Explore service</a>
         </div>
       </div>
       <div class="card card-content mx-auto" style="width: 19rem;">
         <div class="card-body-services">
           <h6 class="card-text">Ingredient Filters</h6>
           <p>Capability to filter recipes based on the ingredients available in the user's...</p>
-          <h6 class="card-link">Explore service</h6>
+          <a href="#" class="card-link">Explore service</a>
         </div>
       </div>
       <div class="card card-content mx-auto" style="width: 19rem;">
         <div class="card-body-services">
           <h6 class="card-text">Cooking Video Tutorials</h6>
           <p>Providing cooking tutorials in video format to assist users in understanding...</p>
-          <h6 class="card-link">Explore service</h6>
+          <a href="#" class="card-link">Explore service</a>
         </div>
       </div>
     </div>
 
     <br>
 
-    <div class="container-badges sec-content">
-      <div class="row">
-        <div class="col order-first">
-          <h3 class="number-badges">50K+</h3>
-          <h6 class="text-badges">Delicious Recipes</h6>
-        </div>
-        <div class="col">
-          <h3 class="number-badges">4K+</h3>
-          <h6 class="text-badges">Cooking Tips</h6>
-        </div>
-        <div class="col">
-          <h3 class="number-badges">82K+</h3>
-          <h6 class="text-badges">Users Worldwide</h6>
-        </div>
-        <div class="col order-last">
-          <h3 class="number-badges">13K+</h3>
-          <h6 class="text-badges">User Reviews</h6>
-        </div>
-      </div>
+    <div class="container achievement">
+      <ul>
+        <li>
+          <h3>50K</h3>
+          <h6>Delicious Recipes</h6>
+        </li>
+        <li>
+          <h3>50K</h3>
+          <h6>Delicious Recipes</h6>
+        </li>
+        <li>
+          <h3>50K</h3>
+          <h6>Delicious Recipes</h6>
+        </li>
+        <li>
+          <h3>50K</h3>
+          <h6>Delicious Recipes</h6>
+        </li>
+      </ul>
     </div>
   </section>
   <!-- End Services -->
@@ -337,41 +338,55 @@
         </div>
       </div>
 
-      <div class="sec-content" style="display: flex;">
+      <div class="sec-content mx-auto" style="display: flex;">
         <div class="card card-content" style="width: 21rem;">
           <div class="card-body-reviews">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-3">
-                  <img src="mie.png" alt="">
-                  <div class="col-sm-9">
-                  </div>
-                  <h6 class="card-text">Sarah J.</h6>
-                  <p>Food Enthusiast</p>
-                </div>
+            <div class="container user-reviews">
+              <div class="col-sm-3">
+                <img src="Asset/user1.jpg" alt="user-profile" class="profile-picture">
+              </div>
+              <div class="col card-text" style="margin-left: 15px;">
+                <h5>Sarah J.</h5>
+                <h6>Food Enthusiast</h6>
               </div>
             </div>
             <p>"Ricetips provides a comprehensive solution for the cooking world. I love the QuickSearch feature, making
-              it easy...</p>
+              ...</p>
           </div>
         </div>
 
         <div class="card card-content mx-auto" style="width: 21rem;">
           <div class="card-body-reviews">
-            <h6 class="card-text">Ingredient Filters</h6>
-            <p>"Ricetips truly makes cooking more enjoyable. I love how the video tutorials are taught clearly, and the
-              QuickSearch...</p>
-            <h6 class="card-link">Explore service</h6>
+            <div class="container user-reviews">
+              <div class="col-sm-3">
+                <img src="Asset/user1.jpg" alt="user-profile" class="profile-picture">
+              </div>
+              <div class="col card-text" style="margin-left: 15px;">
+                <h5>Andre W.</h5>
+                <h6>Beginner Chef</h6>
+              </div>
+            </div>
+            <p>"Ricetips truly makes cooking more enjoyable. I love how the video tutorials are taught clearly, and...
+            </p>
           </div>
         </div>
-        <div class="card card-content mx-auto" style="width: 21rem;">
+
+        <div class="card card-content" style="width: 21rem;">
           <div class="card-body-reviews">
-            <h6 class="card-text">Ingredient Filters</h6>
-            <p>"Ricetips truly makes cooking more enjoyable. I love how the video tutorials are taught clearly, and the
-              QuickSearch...</p>
-            <h6 class="card-link">Explore service</h6>
+            <div class="container user-reviews">
+              <div class="col-sm-3">
+                <img src="Asset/user1.jpg" alt="user-profile" class="profile-picture">
+              </div>
+              <div class="col card-text" style="margin-left: 15px;">
+                <h5>Luciana Luvs</h5>
+                <h6>Student Cook</h6>
+              </div>
+            </div>
+            <p>"helps me explore the culinary world with highly informative features. The cooking video library is
+              incredibly...</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
