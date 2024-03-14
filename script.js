@@ -1,23 +1,29 @@
-let currentIndex = 0;
+// Memanggil fungsi saat DOM telah dimuat
+document.addEventListener("DOMContentLoaded", function () {
+  // Mengambil semua tautan navbar
+  const navLinks = document.querySelectorAll("nav ul li a");
 
-function prevSlide() {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
-}
+  // Iterasi setiap tautan navbar
+  navLinks.forEach(function (navLink) {
+    // Menambahkan event listener untuk setiap tautan navbar
+    navLink.addEventListener("click", function (event) {
+      // Mencegah perilaku default dari tautan
+      event.preventDefault();
 
-function nextSlide() {
-  const totalItems = document.querySelectorAll(".carousel-inner .card").length;
-  if (currentIndex < totalItems - 1) {
-    currentIndex++;
-    updateCarousel();
-  }
-}
+      // Mendapatkan ID tujuan dari atribut href
+      const targetId = navLink.getAttribute("href").substring(1);
 
-function updateCarousel() {
-  const carousel = document.getElementById("recipeCarousel");
-  carousel.querySelector(".carousel-inner").style.transform = `translateX(${
-    -currentIndex * 100
-  }%)`;
-}
+      // Mendapatkan elemen dengan ID tujuan
+      const targetSection = document.getElementById(targetId);
+
+      // Menentukan posisi elemen tujuan di halaman
+      const offsetTop = targetSection.offsetTop;
+
+      // Menggulir halaman ke posisi elemen tujuan
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth", // Animasi guliran halus
+      });
+    });
+  });
+});
