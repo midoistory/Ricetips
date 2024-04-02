@@ -33,7 +33,6 @@ html {
 
 body {
   padding-top: 10px;
-  overflow-x: hidden;
 }
 
 h3.heading {
@@ -43,7 +42,7 @@ h3.heading {
 }
 
 .sec-heading {
-  padding-top: 180px;
+  padding-top: 250px;
 }
 
 .sec-content {
@@ -99,7 +98,7 @@ form {
 }
 
 .navbar-nav li:hover,
-.navbar-nav li:active {
+.navbar-nav li.active {
   font-weight: var(--font-weight-semi-bold);
 }
 
@@ -321,4 +320,32 @@ h4.card-heading {
 .card-body-reviews p {
   margin-top: 30px;
   padding: 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--color-green);
+}
+/* 
+footer .container {
+  padding: 0;
+} */
+
+footer .row {
+  padding: 40px 0px 20px;
+}
+
+footer .col {
+  padding: 0;
+}
+
+.col-5 ul {
+  margin-top: 5px;
+}
+
+.col-5 ul li a {
+  color: #f8f5f4;
+  text-decoration: none;
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-weight-regular);
 }
